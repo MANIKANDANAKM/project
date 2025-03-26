@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Insights AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Upload Medical Records</h1>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <input type="file" id="fileInput" name="file" accept=".csv">
+            <button type="submit">Upload</button>
+        </form>
+        <div id="loading" class="hidden">Processing...</div>
+        <div id="result"></div>
+    </div>
+</body>
+</html>
