@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parkinson's Detection AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollreveal/4.0.9/scrollreveal.min.js" defer></script>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>AI-Powered Parkinson’s Detection</h1>
+            <p>Revolutionizing early detection with cutting-edge AI analysis.</p>
+            <a href="/try-now" class="cta-btn">Try Now</a>
+        </div>
+        <div class="hero-img-container">
+            <img src="{{ url_for('static', filename='images/parkinson-disease.webp') }}" alt="AI Brain Analysis">
+        </div>
+    </header>
+    
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Why Choose Our AI?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="icon-box">
+                    <img src="{{ url_for('static', filename='images/Data analysis.png') }}" alt="Data Analysis">
+                </div>
+                <h3>Medical Data Analysis</h3>
+                <p>Upload your records and let AI analyze key health indicators.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon-box">
+                    <img src="{{ url_for('static', filename='images/Diagnosis.png') }}" alt="Diagnosis">
+                </div>
+                <h3>Accurate Diagnosis</h3>
+                <p>Our AI model detects Parkinson’s symptoms based on medical data.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon-box">
+                    <img src="{{ url_for('static', filename='images/Recommendation.png') }}" alt="Recommendations">
+                </div>
+                <h3>Smart Recommendations</h3>
+                <p>Get personalized diet, exercise, and mental health advice.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon-box">
+                    <img src="{{ url_for('static', filename='images/Upload.png') }}" alt="CSV Upload">
+                </div>
+                <h3>Easy File Upload</h3>
+                <p>Upload medical reports in CSV format for instant analysis.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <h2>How It Works</h2>
+        <div class="steps">
+            <div class="step">
+                <h3>1. Upload Your Data</h3>
+                <p>Submit your medical reports for AI analysis.</p>
+            </div>
+            <div class="step">
+                <h3>2. AI Processing</h3>
+                <p>Our advanced AI scans for Parkinson’s symptoms.</p>
+            </div>
+            <div class="step">
+                <h3>3. Get Instant Results</h3>
+                <p>Receive a detailed report with health insights.</p>
+            </div>
+            <div class="step">
+                <h3>4. Follow Recommendations</h3>
+                <p>Improve your health with AI-powered guidance.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions? Reach out to us at <a href="mailto:manikandanak2131@gmail.com">manikandanak2131@gmail.com</a></p>
+    </section>
+
+    <footer>
+        <p>© 2025 Parkinson's Detection AI. All rights reserved.</p>
+    </footer>
+
+    <script>
+        ScrollReveal().reveal('.hero-content', { delay: 300, origin: 'left', distance: '50px', duration: 1000 });
+        ScrollReveal().reveal('.hero-img', { delay: 500, origin: 'right', distance: '50px', duration: 1000 });
+        ScrollReveal().reveal('.feature-card, .testimonial-card, .step', { interval: 200, origin: 'bottom', distance: '30px', duration: 800 });
+    </script>
+
+</body>
+</html>

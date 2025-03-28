@@ -1,0 +1,158 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Merriweather:wght@400;700&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #0A163D, #0E2A69, #123E9A);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container */
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 400px;
+    max-width: 90%;
+    overflow-wrap: break-word;
+    transition: width 0.3s ease-in-out;
+}
+
+/* Expanded container when result is displayed */
+.container.expanded {
+    width: 85%;
+}
+
+/* Title */
+h1 {
+    font-size: 2rem;
+    font-family: 'Merriweather', serif;
+    color: #FF9900;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+/* File Input */
+input[type="file"] {
+    border: 2px dashed #FF9900;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    background: #eef2f7;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+input[type="file"]:hover {
+    background: rgba(255, 153, 0, 0.1);
+}
+
+/* Button */
+button {
+    background: linear-gradient(90deg, #FFA500, #FF7700);
+    color: white;
+    font-size: 1rem;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(255, 119, 0, 0.4);
+}
+
+/* Loading Text */
+#loading {
+    font-size: 1.2rem;
+    color: #FF9900;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    display: none;
+}
+
+/* Result Display */
+#result {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #333;
+    max-height: 200px;
+    overflow-y: auto;
+    word-wrap: break-word;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #f9f9f9;
+    text-align: left;
+    display: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.subheading {
+    color: #2575fc;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.diagnosis {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #6a11cb;
+    margin-bottom: 15px;
+}
+
+/* Highlight Styling */
+.highlight {
+    color: #ff7700;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/* Insights Styling */
+.insights {
+    line-height: 1.6;
+    padding: 10px;
+    color: #333;
+}
+
+/* Show result */
+#result.show {
+    display: block;
+}
+
+/* Back Button */
+a button {
+    background: #0E2A69;
+    margin-top: 15px;
+}
+
+a button:hover {
+    box-shadow: 0px 4px 10px rgba(14, 42, 105, 0.4);
+}

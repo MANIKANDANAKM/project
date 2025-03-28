@@ -1,0 +1,228 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fc;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 10%;
+    background: linear-gradient(135deg, #0A163D, #123E9A);
+    color: white;
+    text-align: left;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero h1 {
+    font-size: 3.2rem;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #FF9900;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    max-width: 500px;
+}
+
+.hero-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img-container img {
+    width: 450px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Call-to-Action Button */
+.cta-btn {
+    background: linear-gradient(90deg, #FFA500, #FF7700);
+    color: white;
+    font-size: 1.2rem;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.cta-btn:hover {
+    background: #CC8400;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(255, 119, 0, 0.4);
+}
+
+/* Black Button (e.g., "Download App") */
+.black-btn {
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.black-btn:hover {
+    opacity: 0.9;
+}
+
+/* Features Section */
+.features {
+    text-align: center;
+    padding: 60px 20px;
+    background: #eef2f7;
+}
+
+.features h2 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    font-family: 'Merriweather', serif;
+    color: #FF9900;
+}
+
+/* Glassmorphism Feature Cards */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-card:hover {
+    animation: shake 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes shake {
+    0% { transform: rotate(-2deg); }
+    50% { transform: rotate(0deg); }
+    100% { transform: rotate(2deg); }
+}
+
+.feature-card h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.feature-card p {
+    font-size: 1rem;
+}
+
+/* Icon Box */
+.icon-box {
+    width: 90px;
+    height: 90px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.icon-box img {
+    width: 60px;
+}
+
+/* How It Works Section */
+.how-it-works {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.how-it-works h2 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    font-family: 'Merriweather', serif;
+    color: #FF9900;
+}
+
+.steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.step {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    max-width: 250px;
+    text-align: center;
+}
+
+.step h3 {
+    font-size: 1.4rem;
+    color: #6a11cb;
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 60px 20px;
+    background: #eef2f7;
+}
+
+.contact h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    font-family: 'Merriweather', serif;
+    color: #FF9900;
+}
+
+.contact p {
+    font-size: 1.2rem;
+}
+
+.contact a {
+    color: #2575fc;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    font-size: 1rem;
+}
