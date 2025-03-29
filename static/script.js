@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
         resultDiv.innerHTML = "";
 
         try {
-            const response = await fetch("/upload", {
+            const response = await fetch("https://neuropredict.onrender.com/upload", {
                 method: "POST",
                 body: formData,
             });
